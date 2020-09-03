@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Displaying elements containing "a"</title>
+    </head>
+    <body>
+        <script>
+            let arr = ["Shiva","Kumar","lets","upgrade","javascript"];
+            var s;
+            for(let i=0;i<arr.length;i++)
+            {
+                s = arr[i].search('a');
+                if(s>0)
+                {
+                    document.write(`${arr[i]}\n`);
+                    // document.write('\n');
+                }
+            }
+        </script>
+    </body>
+</html>

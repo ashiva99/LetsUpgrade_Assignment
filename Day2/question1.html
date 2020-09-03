@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for a particular character in a string</title>
+</head>
+<body>
+        Enter the string<br>
+        <input type="text" name="Enter the string" id="str"><br>
+        Enter the character to search<br>
+        <input type="text" name="Enter Char" id="chr"><br>
+        <input type="submit" name="submit" value="Submit" onclick="srch()">
+        <p id="ans"></p>
+    
+    <script>
+        function srch()
+        {
+            var a=document.getElementById("str").value;
+            var b=document.getElementById("chr").value;
+            var result=a.search(b);
+            document.getElementById("ans").innerHTML=result;
+        }
+        let str=''
+    </script>
+</body>
+</html>

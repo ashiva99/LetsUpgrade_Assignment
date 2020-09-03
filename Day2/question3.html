@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Search for an element in array
+        </title>
+    </head>
+    <body>
+            Search for a string:
+            <input type="text" id="id1">
+            <button onclick="Found()">click</button>
+            <p id="out"></p>
+        <script>
+            function Found(){
+                let arr = ["shiva","kumar","lets","upgrade","javascript"];
+                var a = document.getElementById("id1").value;
+                var show = arr.includes(a);
+                if(show)
+                   document.getElementById("out").innerHTML = a + " is available";
+                else
+                   document.getElementById("out").innerHTML = a + " is not available"; 
+            }
+        </script>
+    </body>
+</html>
